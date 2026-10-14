@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fuga da Escola 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="jogo">
+  <canvas id="cena"></canvas>
+  <div class="hud">❤️ <span id="vidas">3</span> &nbsp; 📚 <span id="livros">0</span>/<span id="nec">3</span> &nbsp; 📢 <span id="apitos">2</span> &nbsp; 🔑 <span id="chave">não</span> &nbsp; ⏱ <span id="tempo">180</span>s &nbsp; 🏫 Fase <span id="fase">1</span>
+    <div class="barra"><div id="estamina"></div></div></div>
+  <canvas id="mini" width="152" height="104"></canvas>
+  <div id="aviso"></div>
+  <div class="pad" id="padL">
+    <span></span><button data-k="KeyW">▲</button><span></span>
+    <button data-k="KeyA">◀</button><button data-k="KeyS">▼</button><button data-k="KeyD">▶</button>
+  </div>
+  <div class="pad" id="padR"><button data-k="ShiftLeft">⚡</button><button data-acao="E">🫣</button><button data-acao="F">📢</button></div>
+  <div id="escuro">🫣 Escondido no armário — aperte E para sair</div>
+  <div id="pego">😱 PEGO PELO INSPETOR!</div>
+  <div id="tela">
+    <h1>🏫 Fuga da Escola</h1>
+    <p>Você ficou preso na escola depois da aula! Pegue os <b>livros</b> e a <b>chave</b> (são 3 fases, cada uma mais difícil), depois fuja pela porta no fim do corredor. Cuidado com o <b>inspetor</b>: ele te persegue!</p>
+    <p>W/S ou ↑/↓ andam · A/D ou ←/→ viram · arraste o mouse para olhar · Shift/Espaço corre (gasta energia) · ☕ recupera energia · <b>E</b> esconde no armário · <b>F</b> joga o apito para distrair o inspetor</p>
+    <button id="btn">Começar</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
